@@ -1,0 +1,30 @@
+.container-fluid {
+  padding: 0;
+}
+
+.navbar .container-fluid {
+  justify-content: space-around;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.avatar__image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  height: 10px;
+}
+
+.input-group {
+  width: 120px;
+}
+
+nav {
+  background-color: lightgray;
+}

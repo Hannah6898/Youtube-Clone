@@ -1,22 +1,33 @@
 .vertical-nav {
-  min-width: 17rem;
   position: fixed;
   transition: all 0.4s;
 }
 
+.toggle-nav {
+  min-width: 17rem;
+}
+
+.main-nav {
+  min-width: 7rem;
+}
+
 .logo {
-  height: 10px;
+  position: relative;
+  height: 20px;
+  top: 10px;
 }
 
 .hamburger-toggler {
   border: none;
   background-color: transparent;
+  position: relative;
+  bottom: 15px;
 }
 
 .nav-btn button {
   border: none;
-  background-color: transparent;
   width: 100%;
+  background-color: transparent;
   text-overflow: ellipsis;
   padding: 5px 0;
 }
@@ -26,8 +37,11 @@
 }
 
 i {
-  font-size: 20px;
+  position: relative;
+  font-size: 17px;
   color: #606060;
+  padding: 0 10px;
+  top: 7px;
 }
 
 .nav-title {
@@ -37,11 +51,20 @@ i {
 
 .avatar {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 .avatar__image {
   border-radius: 50%;
   height: 100%;
   width: 100%;
+}
+
+header {
+  padding: 17px 15px;
+}
+
+.input-group {
+  width: 30%;
+  margin: 0 50px;
 }

@@ -20,24 +20,51 @@
       src="https://kit.fontawesome.com/c9cf10949e.js"
       crossorigin="anonymous"
     ></script>
-
     <link rel="stylesheet" href="style.css" />
+
   </head>
+
   <body>
     <div class="container-fluid">
-    <div class="vertical-nav bg-white">
-      
-    <button class="hamburger-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-     <i class="fas fa-bars"></i>
-    </button>
-         <img class="logo" src="src/Logo.png"></img>
+      <header>
+  <div class="d-flex justify-content-between bd-highlight">
+ 
+       <button class="hamburger-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fas fa-bars"></i>
+        </button>
+        <img class="logo" src="src/Logo.png"></img>
+ 
+ <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+</div>
+<i class="fas fa-microphone"></i>
+
+  <div class="p-2 bd-highlight"><i class="fas fa-bell"></i></div>
+  <div class="p-2 bd-highlight"><i class="fas fa-th"></i></div>
+  <div class="p-2 bd-highlight"><i class="fas fa-video"></i></div>
+
+  <div class="p-2 bd-highlight">
+    <div class="avatar">
+    <img class="avatar__image" src="src/avatar.jpg" />
+  </div>
+</div>
+
+</div>
+ <hr/>
+</header>
+ 
+   </div>
+  
+<div class="vertical-nav toggle-nav bg-white">
+ 
           <div class="collapse navbar-collapse" id="navbarScroll">
       <div
         class="py-4 px-3 bg-light navbar-nav-scroll"
         style="--bs-scroll-height: 100vh"
       >
         <hr />
-        <div class="nav-btn">
+        <div class="nav-btn toggle-nav-btn">
           <div>
             <button class="row">
               <i class="fas fa-home col-4"></i
@@ -159,19 +186,37 @@
         </div>
         </div>
       </div>
+   
+ <div class="vertical-nav bg-white nav-btn main-nav">
+   <div>
+     <button>
+       <div><i class="fas fa-home col-4"></i></div>
+       Home    
+      </button>
+   </div>
 
+   <div>
+     <button>
+       <div><i class="fas fa-compass col-4"></i></div>
+       Explore   
+      </button>
+   </div>
 
-    </div>
+   <div>
+     <button>
+       <div><i class="fas fa-home col-4"></i></div>
+       Subscriptions  
+      </button>
+   </div>
 
+   <div>
+     <button>
+       <div><i class="fas fa-home col-4"></i></div>
+   Library   
+      </button>
+   </div>
+ </div>
 
-<i class="fas fa-microphone"></i>
-<i class="fas fa-video"></i>
-<i class="fas fa-th"></i>
-<i class="fas fa-bell"></i>
-<div class="avatar">
-<!-- Avatar image -->
-<img class="avatar__image" src="src/avatar.jpg" />
-</div>
    </div>
   </body>
 </html>

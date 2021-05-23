@@ -1,9 +1,38 @@
-.container-fluid {
-  padding: 0;
+.vertical-nav {
+  min-width: 17rem;
+  position: fixed;
+  transition: all 0.4s;
 }
 
-.navbar .container-fluid {
-  justify-content: space-around;
+.logo {
+  height: 10px;
+}
+
+.hamburger-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-btn button {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+.btn-text {
+  text-align: left;
+}
+
+i {
+  font-size: 20px;
+  color: #606060;
+}
+
+.nav-title {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .avatar {
@@ -15,16 +44,4 @@
   border-radius: 50%;
   height: 100%;
   width: 100%;
-}
-
-.logo {
-  height: 10px;
-}
-
-.input-group {
-  width: 120px;
-}
-
-nav {
-  background-color: lightgray;
 }

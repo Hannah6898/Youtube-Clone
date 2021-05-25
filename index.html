@@ -26,36 +26,38 @@
 
   <body>
     <div class="container-fluid">
+
       <header>
-  <div class="d-flex justify-content-between bd-highlight">
- 
+        <ul class="header-lists">
+          <li >
        <button class="hamburger-toggler" type="button" id="hamburger-btn">
          <i class="fas fa-bars"></i>
         </button>
+      </li>
+      <li class="logo-list" >
         <img class="logo" src="src/img/Logo.png"></img>
- 
- <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-</div>
-<i class="fas fa-microphone"></i>
-
-  <div class="p-2 bd-highlight"><i class="fas fa-bell"></i></div>
-  <div class="p-2 bd-highlight"><i class="fas fa-th"></i></div>
-  <div class="p-2 bd-highlight"><i class="fas fa-video"></i></div>
-
-  <div class="p-2 bd-highlight">
-    <div class="avatar">
-    <img class="avatar__image" src="src/img/avatar.jpg" />
-  </div>
-</div>
-
-</div>
- <hr/>
-</header>
- 
-   </div>
-  
+     </li>
+      </ul>
+        <ul class="header-lists input-list">
+          <li class="input-list-item"><div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          </div></li>
+          <li><i class="fas fa-microphone header-icons"></i></li>
+        </ul>
+        <ul class="header-lists">
+          <li><i class="fas fa-bell header-icons"></i></li>
+          <li> <i class="fas fa-th header-icons"></i></li>
+          <li> <i class="fas fa-video header-icons"></i></li>
+          <li> <div class="avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div>
+        </li> 
+      </ul>
+      
+    </header>
+   
+   <hr class="header-line"/>
 <div class="vertical-nav toggle-nav bg-white">
  
           <div  id="navbarScroll">
@@ -216,7 +218,7 @@
       </button>
    </div>
  </div>
-
+  </div>
    </div>
    <script src="src/script.js"></script>
   </body>

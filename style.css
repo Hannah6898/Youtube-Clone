@@ -14,14 +14,13 @@
 .logo {
   position: relative;
   height: 20px;
-  top: 10px;
+  left: 20px;
 }
 
 .hamburger-toggler {
   border: none;
   background-color: transparent;
   position: relative;
-  bottom: 15px;
 }
 
 .nav-btn button {
@@ -37,11 +36,8 @@
 }
 
 i {
-  position: relative;
   font-size: 17px;
   color: #606060;
-  padding: 0 10px;
-  top: 7px;
 }
 
 .nav-title {
@@ -50,9 +46,12 @@ i {
 }
 
 .avatar {
+  position: relative;
+  bottom: 10px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  margin: 0 10px;
 }
 .avatar__image {
   border-radius: 50%;
@@ -64,11 +63,6 @@ header {
   padding: 17px 15px;
 }
 
-.input-group {
-  width: 30%;
-  margin: 0 50px;
-}
-
 .hide {
   display: none;
 }
@@ -77,4 +71,46 @@ header {
   .main-nav {
     display: none;
   }
+}
+
+header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-lists {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header-icons {
+  position: relative;
+  bottom: 3px;
+  margin: 0 15px 0 15px;
+}
+
+ul {
+  padding: 0;
+}
+
+.input-list {
+  width: 55%;
+  justify-content: center;
+}
+.input-list-item {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  bottom: 8px;
+}
+.header-line {
+  height: 5px;
+  color: black;
+  width: 80%;
+  margin: 0;
 }

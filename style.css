@@ -68,3 +68,13 @@ header {
   width: 30%;
   margin: 0 50px;
 }
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}

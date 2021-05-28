@@ -4,6 +4,7 @@ header {
   height: 56px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 ul {
@@ -13,6 +14,14 @@ ul {
 i {
   font-size: 17px;
   color: #606060;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .top-navbar {
@@ -46,31 +55,57 @@ i {
   bottom: 8px;
 }
 
-.header-icons {
-  position: relative;
-  bottom: 3px;
-  margin: 0 15px 0 15px;
+.form-control {
+  border-radius: 0;
+  transition: none;
+  line-height: 24px;
+  font-size: 16px;
 }
 
-.sign-in-btn {
+.search-btn {
+  border: 1px grey solid;
+  border-radius: 0;
+  padding: 0 20px;
+}
+.header-icons,
+.mic {
+  font-size: 18px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.sign-in-btn button {
   color: #105fd4;
   border: 1px solid #105fd4;
   background-color: transparent;
   text-transform: uppercase;
+  padding: 8px 10px;
+  position: relative;
+  bottom: 10px;
 }
 
 .sign-in-btn i {
   color: #105fd4;
-  padding: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.header-line {
+  height: 5px;
+  color: black;
+  width: calc(100% - 250px);
+  margin: 0 0 0 250px;
 }
 
 .vertical-nav {
   position: fixed;
   transition: all 0.3s ease;
+  overflow-y: auto;
+  margin-top: 50px;
 }
 
 .main-side-nav {
-  min-width: 17rem;
+  min-width: 16rem;
 }
 
 .nav-btn button {
@@ -78,11 +113,18 @@ i {
   width: 100%;
   background-color: transparent;
   text-overflow: ellipsis;
-  padding: 5px 0;
+  padding: 8px 0;
+  transition: 3ms all ease;
+}
+
+.nav-btn button:hover {
+  background-color: lightgray;
 }
 
 .btn-text {
   text-align: left;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .nav-title {
@@ -91,23 +133,19 @@ i {
 }
 
 .secondary-side-nav {
-  min-width: 7rem;
+  min-width: 5rem;
 }
 
-.header-line {
-  height: 5px;
-  color: black;
-  width: 80%;
-  margin: 0;
+.secondary-side-nav button {
+  font-size: 10px;
 }
 
 .main_container {
-  width: calc(100% - 270px);
-  margin-top: 0px;
-  margin-left: 270px;
-  padding: 15px;
+  width: calc(100% - 250px);
+  margin-top: 50px;
+  margin-left: 250px;
+  padding-top: 15px;
   transition: all 0.3s ease;
-  background-color: lightgray;
 }
 
 .carousel-control-prev,
@@ -120,20 +158,42 @@ i {
   border-radius: 20px;
 }
 
+.carousel-inner button {
+  margin: auto;
+}
+
+.carousel-line {
+  margin-bottom: 0;
+}
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.card-body {
+  background-color: #f9f9f9;
+}
+
 .card-title {
   font-size: 14px;
+  margin: 0;
+  font-weight: bold;
 }
 
 .card-text {
   font-size: 14px;
   color: #030303;
+  margin: 0;
 }
 
 .card-avatar {
   border-radius: 50%;
   height: 45px;
   width: 45px;
-  margin: 0 10px;
 }
 .avatar__image {
   border-radius: 50%;
@@ -141,9 +201,27 @@ i {
   width: 100%;
 }
 
+.youtube-cards {
+  padding: 0 20px 0 10px;
+  background-color: #f9f9f9;
+}
+
+.youtube-cards .row {
+  margin: 0;
+}
+
+.main-line hr {
+  height: 5px;
+  color: #c4c1c1;
+}
+
+.show-more button {
+  margin: 0 auto;
+}
+
 .now {
-  width: calc(100% - 120px);
-  margin-left: 120px;
+  width: calc(100% - 90px);
+  margin-left: 90px;
 }
 
 .hide {

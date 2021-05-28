@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
 
   <body>
@@ -49,17 +49,12 @@
           <li><i class="fas fa-microphone header-icons"></i></li>
         </ul>
         <ul class="top-navbar">
-          <li><i class="fas fa-bell header-icons"></i></li>
           <li> <i class="fas fa-th header-icons"></i></li>
-          <li> <i class="fas fa-video header-icons"></i></li>
-          <li> <div class="avatar">
-            <img class="avatar__image" src="src/img/avatar.jpg" />
-          </div>
+          <i class="fas fa-ellipsis-v"></i>
+          <li> <button class="sign-in-btn"><i class="fas fa-user-circle"></i>Sign In</button>
         </li> 
       </ul>
     </header>
-   
-   <hr class="header-line"/>
 
 <div class="vertical-nav main-side-nav bg-white scroll-nav">
  
@@ -68,7 +63,6 @@
         class="py-4 px-3 bg-light navbar-nav-scroll"
         style="--bs-scroll-height: 100vh"
       >
-        <hr />
         <div class="nav-btn toggle-nav-btn">
           <div>
             <button class="row">
@@ -101,42 +95,39 @@
               <span class="col-8 btn-text">History</span>
             </button>
           </div>
-          <div>
-            <button class="row">
-              <i class="fas fa-history col-4"></i>
-              <span class="col-8 btn-text">Your video</span>
-            </button>
-          </div>
-          <div>
-            <button class="row">
-              <i class="fas fa-history col-4"></i>
-              <span class="col-8 btn-text">Watch later</span>
-            </button>
-          </div>
-          <div>
-            <button class="row">
-              <i class="fas fa-chevron-down col-4"></i>
-              <span class="col-8 btn-text">Show more</span>
-            </button>
-          </div>
+          <hr/>
+       <p>Sign in to like videos <br/>comment and subscribe.</p>
+       <button class="sign-in-btn"> <i class="fas fa-user-circle"></i>Sign in</button>
           <hr />
-          <h4 class="nav-title">More From Youtube</h4>
+          <h4 class="nav-title">Best of Youtube</h4>
           <div>
             <button class="row">
               <i class="fas fa-chevron-down col-4"></i>
-              <span class="col-8 btn-text">YouTube Premium</span>
+              <span class="col-8 btn-text">Music</span>
             </button>
           </div>
           <div>
             <button class="row">
               <i class="fas fa-chevron-down col-4"></i>
-              <span class="col-8 btn-text">Movies & Shows</span>
+              <span class="col-8 btn-text">Sport</span>
             </button>
           </div>
           <div>
             <button class="row">
               <i class="fas fa-chevron-down col-4"></i>
               <span class="col-8 btn-text">Gaming</span>
+            </button>
+          </div>
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">Movies & shows</span>
+            </button>
+          </div>
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">News</span>
             </button>
           </div>
           <div>
@@ -160,10 +151,37 @@
           <div>
             <button class="row">
               <i class="fas fa-chevron-down col-4"></i>
-              <span class="col-8 btn-text">Sports</span>
+              <span class="col-8 btn-text">Spotlight</span>
+            </button>
+          </div>
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">360∘ Video</span>
             </button>
           </div>
           <hr />
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">Browse channels</span>
+            </button>
+          </div>
+          <hr/>
+          <h4 class="nav-title">More from Youtube</h4>
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">Youtube Premium</span>
+            </button>
+          </div>
+          <div>
+            <button class="row">
+              <i class="fas fa-chevron-down col-4"></i>
+              <span class="col-8 btn-text">Live</span>
+            </button>
+          </div>
+         <hr/>
           <div>
             <button class="row">
               <i class="fas fa-chevron-down col-4"></i>
@@ -228,17 +246,25 @@
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
   <div class="carousel-inner">
     <div class="carousel-item active" >
-      <button>Hi</button>
-      <button>Hi</button>
-      <button>Hi</button>
-      <button>Hi</button>
-      <button>Hi</button>
+      <button >All</button>
+      <button >Live</button>
+      <button >Music</button>
+      <button >Mixes</button>
+      <button>Science Fiction</button>
     </div>
     <div class="carousel-item">
-         <button>Hello</button>
+      <button>Formula 1</button>
+      <button>Trailers</button>
+      <button>Angular</button>
+      <button>Eurovision</button>
+      <button>Zombie Films</button>
     </div>
     <div class="carousel-item">
-        <button>my</button>
+        <button>Tiny Desk Concerts</button>
+        <button>Beauty</button>
+      <button>Eating</button>
+      <button>Roller skates</button>
+      <button>Conversation</button>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -247,12 +273,309 @@
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
   </button>
+ 
 </div>
+<hr>
+
+
+<div class="row g-3">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+     <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  
 </div>
 
-   </div>
+<div class="row g-3">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+     <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
+<hr/>
+<h3>Trending</h3>
+<div class="row g-3">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+     <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
 
+<h4>Show more arrow</h4>
 
+<hr/>
+
+<div class="row g-3">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+     <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+       <img src="src/img/youtube-thumbnail.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card-avatar">
+            <img class="avatar__image" src="src/img/avatar.jpg" />
+          </div></div>
+          <div class="col-9">
+            <h5 class="card-title">Race Highlights | 2021 Monaco Grand Prix</h5>
+        <p class="card-text">Formula 1</p>
+        <p class="card-text">5.1M views ∙ 4 days ago</p></div>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+<hr/>
+
+<h3>COVID-19 news</h3>
+    </div>
+  </div>
    <script src="src/script.js"></script>
   </body>
 </html>

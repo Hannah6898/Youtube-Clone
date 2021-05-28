@@ -74,6 +74,13 @@ h3 {
   margin: 0 20px;
 }
 
+.sign-in {
+  padding-left: 25px;
+}
+.sign-in p {
+  font-size: 14px;
+  line-height: 20px;
+}
 .sign-in-btn button {
   color: #105fd4;
   border: 1px solid #105fd4;

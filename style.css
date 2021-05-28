@@ -1,20 +1,24 @@
-.vertical-nav {
-  position: fixed;
-  transition: all 0.4s;
+header {
+  padding: 17px 15px;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.toggle-nav {
-  min-width: 17rem;
+ul {
+  padding: 0;
 }
 
-.main-nav {
-  min-width: 7rem;
+i {
+  font-size: 17px;
+  color: #606060;
 }
 
-.logo {
-  position: relative;
-  height: 20px;
-  left: 20px;
+.top-navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
 }
 
 .hamburger-toggler {
@@ -23,26 +27,29 @@
   position: relative;
 }
 
-.nav-btn button {
-  border: none;
+.logo {
+  position: relative;
+  height: 20px;
+  left: 20px;
+}
+
+.input-nav {
+  width: 55%;
+  justify-content: center;
+}
+.input-nav-item {
   width: 100%;
-  background-color: transparent;
-  text-overflow: ellipsis;
-  padding: 5px 0;
 }
 
-.btn-text {
-  text-align: left;
+.input-group {
+  position: relative;
+  bottom: 8px;
 }
 
-i {
-  font-size: 17px;
-  color: #606060;
-}
-
-.nav-title {
-  text-transform: uppercase;
-  font-size: 14px;
+.header-icons {
+  position: relative;
+  bottom: 3px;
+  margin: 0 15px 0 15px;
 }
 
 .avatar {
@@ -59,8 +66,62 @@ i {
   width: 100%;
 }
 
-header {
-  padding: 17px 15px;
+.header-line {
+  height: 5px;
+  color: black;
+  width: 80%;
+  margin: 0;
+}
+
+.vertical-nav {
+  position: fixed;
+  transition: all 0.3s ease;
+}
+
+.main-side-nav {
+  min-width: 17rem;
+}
+
+.nav-btn button {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+.btn-text {
+  text-align: left;
+}
+
+.nav-title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.secondary-side-nav {
+  min-width: 7rem;
+}
+
+.main_container {
+  position: relative;
+  left: 280px;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  background-color: lightgray;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: black;
+}
+
+.now {
+  left: 120px;
+  width: 100%;
 }
 
 .hide {
@@ -68,49 +129,10 @@ header {
 }
 
 @media (max-width: 768px) {
-  .main-nav {
+  .secondary-side-nav {
     display: none;
   }
-}
-
-header {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-lists {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.header-icons {
-  position: relative;
-  bottom: 3px;
-  margin: 0 15px 0 15px;
-}
-
-ul {
-  padding: 0;
-}
-
-.input-list {
-  width: 55%;
-  justify-content: center;
-}
-.input-list-item {
-  width: 100%;
-}
-
-.input-group {
-  position: relative;
-  bottom: 8px;
-}
-.header-line {
-  height: 5px;
-  color: black;
-  width: 80%;
-  margin: 0;
+  .main_container {
+    left: 0px;
+  }
 }

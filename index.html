@@ -21,31 +21,34 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
     <div class="container-fluid">
+    
 
       <header>
-        <ul class="header-lists">
+
+        <ul class="top-navbar">
           <li >
        <button class="hamburger-toggler" type="button" id="hamburger-btn">
          <i class="fas fa-bars"></i>
         </button>
       </li>
-      <li class="logo-list" >
+      <li>
         <img class="logo" src="src/img/Logo.png"></img>
      </li>
       </ul>
-        <ul class="header-lists input-list">
-          <li class="input-list-item"><div class="input-group mb-3">
+      
+        <ul class="top-navbar input-nav">
+          <li class="input-nav-item"><div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
           </div></li>
           <li><i class="fas fa-microphone header-icons"></i></li>
         </ul>
-        <ul class="header-lists">
+        <ul class="top-navbar">
           <li><i class="fas fa-bell header-icons"></i></li>
           <li> <i class="fas fa-th header-icons"></i></li>
           <li> <i class="fas fa-video header-icons"></i></li>
@@ -54,11 +57,11 @@
           </div>
         </li> 
       </ul>
-      
     </header>
    
    <hr class="header-line"/>
-<div class="vertical-nav toggle-nav bg-white">
+
+<div class="vertical-nav main-side-nav bg-white scroll-nav">
  
           <div  id="navbarScroll">
       <div
@@ -189,7 +192,7 @@
         </div>
       </div>
    
- <div class="vertical-nav bg-white nav-btn main-nav">
+ <div class="vertical-nav bg-white nav-btn secondary-side-nav">
    <div>
      <button>
        <div><i class="fas fa-home col-4"></i></div>
@@ -219,7 +222,37 @@
    </div>
  </div>
   </div>
+
+  <div class="main_container">
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <button>Hi</button>
+      <button>Hi</button>
+      <button>Hi</button>
+      <button>Hi</button>
+      <button>Hi</button>
+    </div>
+    <div class="carousel-item">
+         <button>Hello</button>
+    </div>
+    <div class="carousel-item">
+        <button>my</button>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span  aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+  </button>
+</div>
+</div>
+
    </div>
+
+
    <script src="src/script.js"></script>
   </body>
 </html>

@@ -115,6 +115,10 @@ h3 {
   min-width: 16rem;
 }
 
+.secondary-side-nav {
+  margin-top: 5px;
+}
+
 .nav-btn button {
   border: none;
   width: 100%;
@@ -122,6 +126,19 @@ h3 {
   text-overflow: ellipsis;
   padding: 8px 0;
   transition: 3ms all ease;
+}
+
+.secondary-side-nav button {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  text-overflow: ellipsis;
+  padding: 15px 0;
+  transition: 3ms all ease;
+}
+
+.secondary-side-nav button:hover {
+  background-color: rgb(236, 235, 235);
 }
 
 .nav-btn button:hover {
@@ -151,8 +168,15 @@ h3 {
   width: calc(100% - 250px);
   margin-top: 50px;
   margin-left: 250px;
-  padding-top: 15px;
   transition: all 0.3s ease;
+}
+
+.carousel {
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15px;
+  width: 82%;
 }
 
 .carousel-control-prev,
@@ -161,16 +185,26 @@ h3 {
 }
 
 .carousel-item button {
-  border: 1px solid grey;
-  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 19px;
+  background-color: #f3f2f2;
+  padding: 5px 13px;
+  margin: 0 8px;
 }
 
-.carousel-inner button {
-  margin: auto;
+.carousel-item {
+  position: relative;
+  left: 80px;
 }
 
 .carousel-line {
   margin-bottom: 0;
+  color: #b8b4b4;
+}
+
+.youtube-cards {
+  margin-top: 50px;
 }
 
 .card {
@@ -188,7 +222,20 @@ h3 {
 .card-title {
   font-size: 14px;
   margin: 0;
-  font-weight: bold;
+  font-weight: 500px !important;
+  color: #030303;
+}
+
+h5 {
+  overflow: hidden;
+  line-height: 20px;
+  max-height: 40px;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
 }
 
 .card-text {
@@ -219,11 +266,12 @@ h3 {
 
 .main-line hr {
   height: 5px;
-  color: #c4c1c1;
+  color: #d3d1d1;
 }
 
 .show-more button {
-  margin: 0 auto;
+  border: none;
+  background-color: transparent;
 }
 
 .now {

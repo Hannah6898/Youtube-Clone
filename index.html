@@ -12,11 +12,6 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://kit.fontawesome.com/c9cf10949e.js"
       crossorigin="anonymous"
     ></script>
@@ -30,7 +25,7 @@
 
       <header class="fixed-top">
 
-        <ul class="top-navbar">
+        <ul class="top-navbar nav-left">
           <li >
        <button class="hamburger-toggler" type="button" id="hamburger-btn">
          <i class="fas fa-bars"></i>
@@ -46,11 +41,11 @@
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
             <button class="btn search-btn" type="button" id="button-addon2"><i class="fas fa-search search-icon"></i></button>
           </div></li>
-          <li><i class="fas fa-microphone mic"></i></li>
+          <li><i class="fas fa-microphone mic" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search with your voice"></i></li>
         </ul>
-        <ul class="top-navbar">
-          <li> <i class="fas fa-th header-icons"></i></li>
-          <li><i class="fas fa-ellipsis-v header-icons"></i></li>
+        <ul class="top-navbar nav-right">
+          <li> <i class="fas fa-th header-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Youtube apps"></i></li>
+          <li><i class="fas fa-ellipsis-v header-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Settings"></i></li>
           <li class="sign-in-btn"> <button ><i class="fas fa-user-circle"></i>Sign In</button>
         </li> 
       </ul>
@@ -61,8 +56,8 @@
 
 <div class="vertical-nav main-side-nav scroll-nav">
  
-          <div  id="navbarScroll">
-      <div
+          <div id="navbarScroll">
+    <div
         class="py-4 px-3 navbar-nav-scroll"
         style="--bs-scroll-height: 100vh"
       >
@@ -213,9 +208,33 @@
               <span class="col-8 btn-text">Send feedback</span>
             </button>
           </div>
+           <hr/>
+           <div class="nav-links">
+           <a href="#">About</a>
+           <a href="#">Press </a>
+          <a href="#">Copyright</a>
+           <br/> 
+           <a href="#">Contact us</a>
+           <a href="#">Creator</a>
+           <a href="#">Advertise</a>
+            <br/> 
+          <a href="#">Developers</a>
+          </div>
+         
+          <div class="nav-links">
+          <a href="#">Terms </a>
+          <a href="#">Privacy </a>
+          <a href="#">Policy & Safety </a>
+          <br/>
+          <a href="#">How Youtube works </a>
+          <br/>
+          <a href="#">Test new features</a>
+       </div>
+        
         </div>
         </div>
       </div>
+     
    
  <div class="vertical-nav bg-white secondary-side-nav">
    <div>
@@ -246,7 +265,7 @@
       </button>
    </div>
  </div>
-  </div>
+   </div>
 
   <div class="main_container">
 
@@ -278,11 +297,11 @@
       <button>Conversation</button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span  aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+    <span  aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Previous" ><i class="fas fa-chevron-left"></i></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+    <span aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Next"><i class="fas fa-chevron-right"></i></span>
   </button>
 
   <span><hr class="carousel-line"/></span>
@@ -670,6 +689,8 @@
 
     </div>
   </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
    <script src="src/script.js"></script>
   </body>
 </html>

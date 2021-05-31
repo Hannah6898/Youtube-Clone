@@ -18,6 +18,7 @@ i {
 
 h3 {
   font-size: 20px;
+  padding: 30px 0 10px 16px;
 }
 
 .container-fluid {
@@ -26,7 +27,6 @@ h3 {
 
 .top-navbar {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
 }
 
@@ -40,6 +40,13 @@ h3 {
   position: relative;
   height: 20px;
   left: 20px;
+}
+
+.nav-left {
+  justify-content: start;
+}
+.nav-right {
+  justify-content: end;
 }
 
 .input-nav {
@@ -78,7 +85,7 @@ h3 {
   padding-left: 25px;
 }
 .sign-in p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 }
 .sign-in-btn button {
@@ -89,6 +96,7 @@ h3 {
   padding: 8px 10px;
   position: relative;
   bottom: 10px;
+  font-size: 14px;
 }
 
 .sign-in-btn i {
@@ -107,8 +115,9 @@ h3 {
 .vertical-nav {
   position: fixed;
   transition: all 0.3s ease;
-  overflow-y: auto;
+  height: calc(100% - 50px);
   margin-top: 50px;
+  overflow-y: scroll;
 }
 
 .main-side-nav {
@@ -154,6 +163,21 @@ h3 {
 .nav-title {
   text-transform: uppercase;
   font-size: 14px;
+}
+
+a {
+  color: #606060;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+a:hover {
+  color: #606060;
+}
+
+.nav-links {
+  margin: 0 0 10px 10px;
 }
 
 .secondary-side-nav {
@@ -268,7 +292,9 @@ h5 {
 
 .main-line hr {
   height: 5px;
-  color: #d3d1d1;
+  color: #a3a1a1;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .show-more button {

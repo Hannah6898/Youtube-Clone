@@ -58,7 +58,7 @@ h3 {
 .form-control {
   border-radius: 0;
   transition: none;
-  line-height: 24px;
+  line-height: 20px;
   font-size: 16px;
 }
 
@@ -78,7 +78,7 @@ h3 {
   padding-left: 25px;
 }
 .sign-in p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
 }
 .sign-in-btn button {
@@ -194,8 +194,9 @@ h3 {
 }
 
 .carousel-item {
-  position: relative;
-  left: 80px;
+  text-align: center;
+  text-overflow: fade;
+  width: 100%;
 }
 
 .carousel-line {
@@ -204,7 +205,8 @@ h3 {
 }
 
 .youtube-cards {
-  margin-top: 50px;
+  position: relative;
+  top: 65px;
 }
 
 .card {
@@ -283,6 +285,10 @@ h5 {
   display: none;
 }
 
+.expand {
+  width: 100%;
+}
+
 @media (max-width: 893px) {
   .secondary-side-nav {
     display: none;
@@ -290,5 +296,12 @@ h5 {
   .now {
     width: 100%;
     margin-left: 0;
+  }
+  .carousel {
+    width: 70%;
+  }
+
+  .expand {
+    width: 100%;
   }
 }

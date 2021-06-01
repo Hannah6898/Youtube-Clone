@@ -37,9 +37,8 @@ h3 {
 }
 
 .logo {
-  position: relative;
   height: 20px;
-  left: 20px;
+  margin: 0 10px 0 20px;
 }
 
 .nav-left {
@@ -74,6 +73,11 @@ h3 {
   border-radius: 0;
   padding: 0 20px;
 }
+
+.search-icon {
+  display: none;
+}
+
 .header-icons,
 .mic {
   font-size: 18px;
@@ -329,5 +333,18 @@ h5 {
 
   .expand {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-icon {
+    display: contents;
+  }
+
+  .input-group {
+    display: none;
+  }
+  .input-nav {
+    width: 30%;
   }
 }

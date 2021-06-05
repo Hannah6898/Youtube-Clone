@@ -96,8 +96,9 @@ h3 {
   bottom: 5px;
 }
 
+.active-btn .material-icons,
 .active button,
-.active-btn .material-icons {
+.active .material-icons {
   color: red;
 }
 

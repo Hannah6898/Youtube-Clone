@@ -7,6 +7,7 @@ const newsSection = document.querySelector(".news-section");
 const recommendationMsg = document.querySelector(".message");
 const undoLink = document.querySelector(".link");
 
+/*This function hides the main vertical navigation bar and expand the page*/
 function toggleBtn(event) {
   event.preventDefault();
   mainNav.classList.toggle("hide");
@@ -14,21 +15,23 @@ function toggleBtn(event) {
   categories.classList.toggle("expand");
 }
 
-function closeSection(event) {
+//This function deletes a section of videos
+function deleteSection(event) {
   event.preventDefault();
   newsSection.classList.toggle("hide");
   recommendationMsg.classList.toggle("show");
 }
 
-function openSection(event) {
+//This function reinstates the deleted video section
+function addSection(event) {
   event.preventDefault();
   newsSection.classList.remove("hide");
   recommendationMsg.classList.remove("show");
 }
 
 hamburgerBtn.addEventListener("click", toggleBtn);
-closeBtn.addEventListener("click", closeSection);
-undoLink.addEventListener("click", openSection);
+closeBtn.addEventListener("click", deleteSection);
+undoLink.addEventListener("click", addSection);
 
 var tooltipTriggerList = [].slice.call(
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
